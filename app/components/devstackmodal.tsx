@@ -10,48 +10,48 @@ export default function DevStackModal() {
       {/* BUTTON */}
       <button
         onClick={() => setOpen(true)}
-        className="cursor-pointer rounded bg-gray-600 px-4 py-2 text-white hover:bg-gray-700"
+        className=""
       >
-        <i className="fa-brands fa-stack-overflow mr-1"></i>
+        <i className="fa-brands fa-stack-overflow"></i>
         Dev Stack
       </button>
 
       {/* MODAL */}
       {open && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
-          <div className="w-full max-w-lg rounded-lg bg-white p-6 shadow-xl">
+        <div className="">
+          <div className="">
             
-            <div className="mb-4 flex items-center justify-between">
+            <div className="">
               <h3 className="text-2xl font-bold">My Dev Stack</h3>
               <button
                 onClick={() => setOpen(false)}
-                className="text-xl font-bold text-gray-500 hover:text-gray-800"
+                className=""
               >
                 ✕
               </button>
             </div>
 
-            <div className="space-y-4">
+            <div className="">
               <div>
-                <h4 className="font-semibold">Frontend</h4>
+                <h4 className="">Frontend</h4>
                 <p>HTML, CSS, JavaScript, React, Next.js, Tailwind</p>
               </div>
 
               <div>
-                <h4 className="font-semibold">Backend</h4>
+                <h4 className="">Backend</h4>
                 <p>Node.js, Express, PHP</p>
               </div>
 
               <div>
-                <h4 className="font-semibold">Database</h4>
+                <h4 className="">Database</h4>
                 <p>MySQL, MongoDB</p>
               </div>
             </div>
 
-            <div className="mt-6 text-right">
+            <div className="">
               <button
                 onClick={() => setOpen(false)}
-                className="rounded bg-gray-700 px-4 py-2 text-white hover:bg-gray-800"
+                className=""
               >
                 Close
               </button>

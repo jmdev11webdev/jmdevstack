@@ -1,27 +1,98 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  /* background: var(--background);
-  color: var(--foreground); */
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
   font-family: "Google Sans", sans-serif;
   overflow-x: hidden;
+}
+
+.desktop-nav {
+  background-color: #ffffff;
+  border-bottom: 4px solid #1b1b1b;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.desktop-nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.mobile-hamburger {
+  display: none;
+}
+
+.web-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.fa-code {
+  margin-right: 15px;
+  font-size: 30px;
+}
+
+.jm-logo {
+  margin-right: 15px;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.stack-title {
+  font-weight: 700;
+}
+
+.desktop-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px;
+}
+
+.desktop-NavItem i,
+.github-link-btn i {
+  margin-right: 5px;
+}
+
+
+.desktop-NavItem {
+  text-decoration: none;
+  font-weight: 700;
+  color: #1b1b1b;
+  padding: 10px;
+}
+
+.desktop-NavItem:hover {
+  background-color: #1b1b1b;
+  color: #ffffff;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.github-link-btn {
+  text-decoration: none;
+  background-color: #1b1b1b;
+  color: #ffffff;
+  padding: 10px 15px;
+  border-radius: 30px;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+} 
+
+@media (max-width: 738px) {
+  .web-link {
+    margin-left: 15px;
+  }
+  .desktop-NavItem,
+  .github-link-btn {
+    display: none;
+  }
+  .mobile-hamburger {
+    display: block;
+  }
 }
