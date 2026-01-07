@@ -1,14 +1,17 @@
 "use client";
 
 import Navbar from "@/app/components/navbar";
-// import Footer from "@/app/components/footer";
+import Home from "@/app/sections/home";
+import About from "@/app/sections/about";
 
 export default function HomePage() {
-  
-
   return (
     <>
       <Navbar />   
+
+      <Home />
+
+      <About />
     </>
   );
 }

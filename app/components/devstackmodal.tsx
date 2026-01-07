@@ -10,7 +10,7 @@ export default function DevStackModal() {
       {/* BUTTON */}
       <button
         onClick={() => setOpen(true)}
-        className=""
+        className="dev-stack"
       >
         <i className="fa-brands fa-stack-overflow"></i>
         Dev Stack
