@@ -14,7 +14,7 @@ body {
 .desktop-nav {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   height: 100px;
   border-bottom: 4px solid #1b1b1b;
   width: 100%;
@@ -31,11 +31,6 @@ body {
   align-items: center;
   text-decoration: none;
   color: #1b1b1b;
-}
-
-.fa-code {
-  margin-right: 15px;
-  font-size: 30px;
 }
 
 .jm-logo {
@@ -70,27 +65,47 @@ body {
   margin-right: 5px;
 }
 
-.desktop-NavItem {
+.desktop-NavItem,
+.dropdown-btn {
   text-decoration: none;
   font-weight: 700;
   color: #1b1b1b;
   padding: 10px;
-  border-radius: 10px;
 }
 
-.desktop-NavItem:hover {
+.desktop-NavItem:hover,
+.dropdown-btn:hover {
   background-color: #1b1b1b;
-  color: #ffffff;
-  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+  color: #ffffff  ;
+}
+
+.dropdown-btn {
+  text-decoration: none;
+  color: #1b1b1b;
+}
+
+.dropdown-btn i {
+  margin-right: 5px;
+  font-weight: 700;
+}
+
+.dropdown-content {
+  display: none;
+}
+
+.dropdown-btn:hover .dropdown-content {
+  display: block;
 }
 
 .github-link-btn {
   text-decoration: none;
+  border: 2px solid #1b1b1b;
   background-color: #1b1b1b;
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
   color: #ffffff;
   padding: 10px 15px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  font-weight: 700;
 } 
 
 .mobile-hamburger {
@@ -103,7 +118,7 @@ body {
 
 .jmdevstack-logo {
   border-radius: 100%;
-  box-shadow: 4px 8px 16px #1b1b1b;
+  box-shadow: 4px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 #home {
@@ -136,6 +151,16 @@ body {
   text-decoration: none;
 }
 
+.hire-stack {
+  display: flex;
+}
+
+.home-content .facebook-link {
+  background-color: transparent;
+  color: #1b1b1b;
+  font-size: 1.4rem;
+}
+
 .dev-stack {
   font-size: 1.2rem;
   padding: 10px 15px;
@@ -143,12 +168,38 @@ body {
   cursor: pointer;
 }
 
+.home-content ul {
+  list-style-type: none;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  bottom: 5px;
+}
+
+.home-content ul li a {
+  background-color: transparent;
+  color: #1b1b1b;
+  font-size: 1.4rem;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.home-content ul li a:hover {
+  transform: translateY(-5px);
+}
+
+#about {
+  scroll-margin-top: 150px;
+  height: 100vh;
+}
 .aboutme-content {
   display: flex;
   padding: 50px;
   justify-content: space-around;
-  align-items: center;
   margin: 2.5%;
+  line-height: 1.5;
 }
 
 .aboutme-content h1 {
@@ -186,14 +237,29 @@ body {
     text-align: center;
     gap: 15px;
   }
+  .home-content h1 {
+    font-size: 1.3rem;
+  }
+  .home-content p {
+    font-size: 1rem;
+  }
+  .hire-stack {
+    font-size: small;
+  }
+  .hire {
+    font-size: 10px;
+  }
   .jmdevstack-logo {
     height: 200px;
     width: 200px;
   }
 
   /* ABOUT ME CONTENT STYLES */
+  #about {
+    justify-content: center;
+  }
   .aboutme-content {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 15px;
   }
   .aboutme-content h2 {

@@ -10,7 +10,6 @@ export default function Navbar() {
     <nav className="desktop-nav">
       {/* LOGO */}
       <Link href="" className="web-link">
-        <i className="fa-solid fa-code"></i>
 
         <h1 className="jm-logo">
           JM
@@ -31,14 +30,9 @@ export default function Navbar() {
           <NavItem href="/#projects" icon="fa-diagram-project" label="Projects" />
 
           <li>
-            <a
-              href="https://github.com/jmdev11webdev"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="github-link-btn"
-            >
-              <i className="fa-brands fa-github"></i>
-              GitHub
+            <a href="javascript:void(0)" className="dropdown-btn">
+              <i className="fa-solid fa-share-nodes"></i>
+              Socials
             </a>
           </li>
         </ul>
@@ -58,10 +52,6 @@ export default function Navbar() {
             <MobileItem href="/#contact" label="Contacts" setOpen={setOpen} />
             <MobileItem href="/#projects" label="Projects" setOpen={setOpen} />
           </ul>
-
-          <a href="https://github.com/jmdev11webdev" target="_blank" rel="noopener noreferrer" className="">
-            GitHub
-          </a>
         </div>
       )}
     </nav>

@@ -18,16 +18,18 @@ export default function Home() {
               Explore my projects and feel free to reach out!
             </p>
 
-              <a
-                href="https://www.linkedin.com/in/juan-miguel-tagle-lahorra-289573344/"
+            <div className="hire-stack">
+                <a
+                href="/#contacts"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mr-5 inline-block rounded bg-gray-700 px-4 py-2 font-semibold text-white hover:bg-gray-800"
-              >
-                Hire Me
-              </a>
+                className="hire"
+                >
+                  Hire Me
+                </a>
 
-              <DevStackModal />
+                <DevStackModal />
+            </div>
           </div>
 
           {/* IMAGE */}
@@ -38,8 +40,35 @@ export default function Home() {
             width={300}
             height={300}
           />
+          
+          <ul>
+            <li>
+              <a href="https://www.facebook.com/jmlahorra">
+                <i className="fa-brands fa-facebook"></i>
+              </a>
+            </li>
 
+            <li>
+              <a href="https://www.instagram.com/jmlahorra">
+                <i className="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+              
+            <li>
+              <a href="https://www.github.com/jmlahorra">
+                <i className="fa-brands fa-github"></i>
+              </a>
+            </li>
+              
+            <li>
+              <a href="https://www.linkedin.com/in/juan-miguel-tagle-lahorra-289573344/">
+                <i className="fa-brands fa-linkedin-in"></i>
+              </a>
+            </li>
+          </ul>
         </div>
+
+        
       </main>
     </>
   );
