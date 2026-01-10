@@ -9,16 +9,10 @@ export default function Navbar() {
   return (
     <nav className="desktop-nav">
       {/* LOGO */}
-      <Link href="" className="web-link">
-
-        <h1 className="jm-logo">
-          JM
+      <Link href="https://jmdevstack.vercel.app" className="web-link">
+        <h1>
+          JMDEVSTACK
         </h1>
-
-        <small className="stack-title">
-          Dev Stack <br />
-          Full Stack Developer
-        </small>
       </Link>
 
       {/* DESKTOP MENU */}
@@ -26,19 +20,12 @@ export default function Navbar() {
         <ul className="desktop-links">
           <NavItem href="/#home" icon="fa-house" label="Home" />
           <NavItem href="/#about" icon="fa-user" label="About" />
-          <NavItem href="/#contact" icon="fa-phone" label="Contacts" />
+          <NavItem href="/#contacts" icon="fa-phone" label="Contact" />
           <NavItem href="/#projects" icon="fa-diagram-project" label="Projects" />
-
-          <li>
-            <a href="javascript:void(0)" className="dropdown-btn">
-              <i className="fa-solid fa-share-nodes"></i>
-              Socials
-            </a>
-          </li>
         </ul>
         
         {/* MOBILE HAMBURGER */}
-        <button onClick={() => setOpen(!open)} className="mobile-hamburger">
+        <button onClick={() => setOpen(!open)} className="hamburger">
             &#x2630;
         </button>
       </div>
@@ -46,10 +33,10 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {open && (
         <div className="mobile-nav">
-          <ul className="">
+          <ul className="mobile-nav-links">
             <MobileItem href="/" label="Home" setOpen={setOpen} />
             <MobileItem href="/#about" label="About" setOpen={setOpen} />
-            <MobileItem href="/#contact" label="Contacts" setOpen={setOpen} />
+            <MobileItem href="/#contacts" label="Contacts" setOpen={setOpen} />
             <MobileItem href="/#projects" label="Projects" setOpen={setOpen} />
           </ul>
         </div>

@@ -9,6 +9,7 @@ export default function DevStackModal() {
     <>
       {/* BUTTON */}
       <button
+        type="button"
         onClick={() => setOpen(true)}
         className="dev-stack"
       >

@@ -4,7 +4,19 @@ export default function About() {
   return (
     <>
       <section id="about">
-        <div className="aboutme-content">
+        <div className="about-content">
+          {/* TEXT */}
+          <div>
+            <h1>
+              <i className="fa-solid fa-user"></i>
+              About Me
+            </h1>
+
+            <p>
+              An aspiring full-stack developer continuously learning, adapting, creating projects, and turning ideas into creative solutions.
+            </p>
+          </div>
+
           {/* IMAGE */}
           <Image
             src="/images/jmdev.jpg"
@@ -13,23 +25,6 @@ export default function About() {
             width={300}
             height={300}
           />
-
-          {/* TEXT */}
-          <div className="texts">
-            <h1 className="abouteme-header">
-              <i className="fa-solid fa-user"></i>
-              About Me
-            </h1>
-
-            <p>
-              Dedicated, passionate, and commited full stack developer on delivering high quality and creative solutions.
-            </p>
-
-            <p>
-              Graduating from <strong>Divine Word Collge of Legazpi</strong>, taking Bachelor of Science in 
-              <strong> Information Technology</strong> specialized in <strong>Web Development</strong>.
-            </p>
-          </div>
         </div>
       </section>
     </>

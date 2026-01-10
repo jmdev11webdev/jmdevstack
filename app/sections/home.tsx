@@ -1,6 +1,5 @@
 "use client";
 
-import DevStackModal from "@/app/components/devstackmodal";
 import Image from "next/image";
 
 export default function Home() {
@@ -8,28 +7,34 @@ export default function Home() {
     <>
       <main id="home">
         <div className="home-content">
-          {/* TEXT */}
-          <div>
-            <h1>
-              Welcome to JMDevStack!
-            </h1>
+          {/* TEXT + ACTIONS */}
+          <div className="home-text">
+            <h1>Welcome to my Web Portfolio!</h1>
+            <p>Explore my projects and feel free to reach out!</p>
 
-            <p>
-              Explore my projects and feel free to reach out!
-            </p>
-
-            <div className="hire-stack">
-                <a
-                href="/#contacts"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hire"
-                >
-                  Hire Me
+            {/* SOCIAL LINKS */}
+            <ul className="socials-profiles">
+              <li>
+                <a href="https://www.facebook.com/jmlahorra" aria-label="Facebook" target="_blank" rel="noopener">
+                  <i className="fa-brands fa-facebook fa-2x"></i>
                 </a>
-
-                <DevStackModal />
-            </div>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/jmlahorra" aria-label="Instagram" target="_blank" rel="noopener">
+                  <i className="fa-brands fa-instagram fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.github.com/jmdev11webdev" aria-label="GitHub" target="_blank" rel="noopener">
+                  <i className="fa-brands fa-github fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/juan-miguel-tagle-lahorra-289573344/" aria-label="LinkedIn" target="_blank" rel="noopener">
+                  <i className="fa-brands fa-linkedin-in fa-2x"></i>
+                </a>
+              </li>
+            </ul>
           </div>
 
           {/* IMAGE */}
@@ -40,35 +45,7 @@ export default function Home() {
             width={300}
             height={300}
           />
-          
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/jmlahorra">
-                <i className="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-
-            <li>
-              <a href="https://www.instagram.com/jmlahorra">
-                <i className="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-              
-            <li>
-              <a href="https://www.github.com/jmlahorra">
-                <i className="fa-brands fa-github"></i>
-              </a>
-            </li>
-              
-            <li>
-              <a href="https://www.linkedin.com/in/juan-miguel-tagle-lahorra-289573344/">
-                <i className="fa-brands fa-linkedin-in"></i>
-              </a>
-            </li>
-          </ul>
         </div>
-
-        
       </main>
     </>
   );

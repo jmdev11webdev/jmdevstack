@@ -24,6 +24,8 @@ export default function RootLayout({
           rel="stylesheet"
         />
 
+        <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet"></link>
+
         {/* Font Awesome */}
         <link
           rel="stylesheet"
