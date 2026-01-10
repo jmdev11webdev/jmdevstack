@@ -30,7 +30,7 @@ export default function Home() {
                 </a>
               </li>
               <li>
-                <a href="https://www.linkedin.com/juan-miguel-tagle-lahorra-289573344/" aria-label="LinkedIn" target="_blank" rel="noopener">
+                <a href="https://www.linkedin.com/in/juan-miguel-tagle-lahorra-289573344/" aria-label="LinkedIn" target="_blank" rel="noopener">
                   <i className="fa-brands fa-linkedin-in fa-2x"></i>
                 </a>
               </li>
