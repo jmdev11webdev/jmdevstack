@@ -53,7 +53,7 @@ export default function Contacts(){
 
     <div className="contact-form-wrapper">
       <form ref={formRef} onSubmit={sendEmail} className="contact-form">
-        <h3>Send Me an Email</h3>
+        <h2>Send Me an Email</h2>
 
         <input type="text" name="name" placeholder="Your Name" required />
         <input type="email" name="email" placeholder="Your Email" required />
