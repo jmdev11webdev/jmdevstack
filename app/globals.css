@@ -319,8 +319,9 @@ main {
   transition: color 0.3s ease;
 }
 
-.landseek-description a:hover {
-  color: #388E3C;
+.landseek-description a:hover,
+.landseek-description a:focus-visible {
+  color: #3a6f3c;
   text-decoration: underline;
 }
 
